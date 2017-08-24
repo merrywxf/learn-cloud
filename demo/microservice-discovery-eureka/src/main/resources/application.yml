@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka
+server:
+  port: 2110
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:2110/eureka
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: 123

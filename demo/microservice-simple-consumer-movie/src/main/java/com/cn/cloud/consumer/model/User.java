@@ -1,23 +1,15 @@
-package com.cn.cloud.model;
+package com.cn.cloud.consumer.model;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 
 /**
  * Created by Administrator on 2017-08-24.
  */
-@Entity
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column
     private String username;
-    @Column
     private String name;
-    @Column
     private Integer age;
-    @Column
     private BigDecimal balance;
 
     public Long getId() {

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: microservice-simple-consumer-movie
+server:
+  port: 2112
+management:
+  security:
+    enabled: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123@localhost:2110/eureka/
+  instance:
+    prefer-ip-address: true

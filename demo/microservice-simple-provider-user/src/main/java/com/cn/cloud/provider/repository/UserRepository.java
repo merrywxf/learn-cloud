@@ -1,6 +1,6 @@
-package com.cn.cloud.repository;
+package com.cn.cloud.provider.repository;
 
-import com.cn.cloud.model.User;
+import com.cn.cloud.provider.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

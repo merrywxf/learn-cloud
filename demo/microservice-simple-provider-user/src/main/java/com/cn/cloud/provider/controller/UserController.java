@@ -1,7 +1,7 @@
-package com.cn.cloud.controller;
+package com.cn.cloud.provider.controller;
 
-import com.cn.cloud.model.User;
-import com.cn.cloud.repository.UserRepository;
+import com.cn.cloud.provider.model.User;
+import com.cn.cloud.provider.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

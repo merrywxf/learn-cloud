@@ -23,7 +23,8 @@
         <spring-cloud.version>Dalston.SR2</spring-cloud.version>
     </properties>
     <modules>
-        <module>../microservice-simpleprovider-user</module>
+        <module>../microservice-simple-provider-user</module>
+        <module>../microservice-simple-consumer-movie</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -36,5 +37,24 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.1.12.RELEASE</version>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>springloaded</artifactId>
+                        <version>1.2.6.RELEASE</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
 </project>
