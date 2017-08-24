@@ -9,8 +9,10 @@ spring:
     hibernate:
       ddl-auto: none
   datasource:
+    platform: h2
     schema: classpath:schema.sql
     data: classpath:data.sql
+
 logging:
   level:
     root:INFO
